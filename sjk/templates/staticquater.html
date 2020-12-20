@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html>
+   <body>
+        <h3>本季度进货统计</h3>
+      <table border = 1>
+         <thead>
+         <td>商品名称</td>
+         <td>生产厂商</td>
+         <td>产品型号</td>
+         <td>单价</td>
+         <td>数量</td>
+         <td>总金额</td>
+         <td>经手业务员编号</td>
+         <td>年</td>
+         <td>月</td>
+         <td>日</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["spmc"]}}</td>
+               <td>{{row["sccs"]}}</td>
+               <td> {{ row["cpxh"]}}</td>
+               <td>{{row['dj']}}</td>
+               <td>{{row['sl']}}</td>
+               <td>{{row['zje']}}</td>
+               <td>{{row['ywybh']}}</td>
+               <td>{{row['nian']}}</td>
+               <td>{{row['yue']}}</td>
+               <td>{{row['ri']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Go back to home page</a>
+
+   </body>
+</html>

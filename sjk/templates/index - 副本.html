@@ -1,0 +1,105 @@
+<!doctype html >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style7.css') }}" type="text/css">
+
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+
+</head>
+<html>
+   <body>
+   <nav>
+        <ul>
+            <li><a href="./login">登录</a></li>
+
+
+
+        </ul>
+    </nav>
+
+
+<div class="dropdown">
+  <button class="dropbtn">交易管理</button>
+  <div class="dropdown-content">
+    <a href="./registerpurchase1">进货登记</a>
+    <a href="./registersale">销售登记</a>
+    <a href="./registeroutsale">退货登记</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">进货统计</button>
+  <div class="dropdown-content">
+    <a href="./querytoday">今日进货统计</a>
+    <a href="./querymonth">本月进货统计</a>
+    <a href="./queryquater">本季度进货统计</a>
+      <a href="./queryyear">本年度进货统计</a>
+  </div>
+
+</div><div class="dropdown">
+  <button class="dropbtn">销售统计</button>
+  <div class="dropdown-content">
+    <a href="./squerytoday">今日销售统计</a>
+    <a href="./squerymonth">本月销售统计</a>
+    <a href="./squeryquater">本季度销售统计</a>
+      <a href="./squeryyear">本年度销售统计</a>
+  </div>
+
+</div><div class="dropdown">
+  <button class="dropbtn" >业绩查看</button>
+  <div class="dropdown-content">
+    <a href="./squerystaff">员工业绩查看</a>
+  </div>
+
+
+</div><div class="dropdown">
+  <button class="dropbtn">查看数据表</button>
+  <div class="dropdown-content">
+    <a href="./purchaselist">进货表</a>
+    <a href="./salelist">销售表</a>
+    <a href="./outsalelist">退货表</a>
+      <a href="./staff">员工表</a>
+      <a href="./merchant">进货商表</a>
+  </div>
+
+
+   </body>
+</html>

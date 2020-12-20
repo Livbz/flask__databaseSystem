@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html>
+   <body>
+        <h3>员工表</h3>
+      <table border = 1>
+         <thead>
+         <td>员工编号</td>
+         <td>销售数量</td>
+         <td>销售总金额</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["ywybh"]}}</td>
+               <td>{{row["sum(sl)"]}}</td>
+               <td> {{ row["sum(zje)"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Go back to home page</a>
+
+   </body>
+</html>

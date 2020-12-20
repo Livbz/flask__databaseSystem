@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+   <body>
+        <h3>进货商表</h3>
+      <table border = 1>
+         <thead>
+         <td>厂商名称</td>
+         <td></td>
+         <td>商品名称</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["sccs"]}}</td>
+               <td>{{row["spmc"]}}</td>
+ 
+            </tr>
+         {% endfor %}
+      </table>
+      <a href = "/">Go back to home page</a>
+
+   </body>
+</html>
